@@ -52,3 +52,37 @@ elif M >= 45:
     print(H, M-45)
 elif M < 45:
     print(H-1, M+15)
+
+# 2525
+H, M = map(int, input().split())
+ovenTime = int(input())
+
+H += ovenTime // 60
+M += ovenTime % 60
+
+if M >= 60:
+    H += 1
+    M -= 60
+if H >= 24:
+    H -= 24
+    
+print("%d %d" % (H, M))
+    
+# 2480
+a, b, c = map(int, input().split())
+if a == b and b == c and c == a:
+    print(10000+a*1000)
+elif a != b and b != c and c != a:
+    if a > b and a > c:
+        print(a*100)
+    elif b > a and b > c:
+        print(b*100)
+    else:
+        print(c*100)
+else:
+    if a == b and b != c:
+        print(1000+a*100)
+    elif a != b and a == c:
+        print(1000+a*100)
+    elif b == c and c != a:
+        print(1000+b*100)
