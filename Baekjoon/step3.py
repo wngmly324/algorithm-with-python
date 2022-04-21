@@ -1,3 +1,4 @@
+'''
 # 2739
 a = int(input())
 
@@ -27,7 +28,7 @@ for i in range(0,n):
 print(sum)
 
 # 15552
-# 공부하기
+# 빠르게 입력받고 출력하는 문제
 
 # 2741
 n = int(input())
@@ -91,4 +92,51 @@ while n:
     b = "*" * i
     n -= 1
     print(a+b)
+
+# 10871
+n, x = map(int, input().split())
+a = map(int, input().split())
+aList = list(a)
+
+for y in aList:
+    if x > y:
+        print(y, end=' ')
+
+#10952
+res = []
+
+while True:
+    a, b = map(int, input().split())
+    res.append(a+b)
+
+    if a == 0 and b == 0:
+        del res[-1]
+        break
+
+for i in res:
+    print(i)
+
+# 10951
+# 입력이 끝날 때까지 A+B를 출력하는 문제
+'''
+# 1110
+a = input()
+
+if len(a) == 1:
+    a = "0"+a
+
+print("a:", a)
+
+sum = int(a[0]) + int(a[1])
+print("sum:", sum)
+
+b = str(sum)
+print("b:", b)
+
+new = a[-1] + b[-1]
+print("new:", new)
+
+c = new
+print("c:", c)
+# 내일 다시
 
