@@ -1,4 +1,3 @@
-'''
 # 2739
 a = int(input())
 
@@ -28,8 +27,18 @@ for i in range(0,n):
 print(sum)
 
 # 15552
-# 빠르게 입력받고 출력하는 문제
+import sys
 
+T = int(input())
+res = []
+
+for i in range(T):
+    a, b = map(int, sys.stdin.readline().split())
+    res.append(a+b)
+
+for i in res:
+    print(i)
+    
 # 2741
 n = int(input())
 for i in range(0,n):
@@ -117,26 +126,31 @@ for i in res:
     print(i)
 
 # 10951
-# 입력이 끝날 때까지 A+B를 출력하는 문제
-'''
+while True:
+    try:
+        a, b = map(int, input().split())
+        print(a+b)
+
+    except:
+        break
+
 # 1110
 a = input()
 
 if len(a) == 1:
     a = "0"+a
 
-print("a:", a)
+aa = a
+count = 0
 
-sum = int(a[0]) + int(a[1])
-print("sum:", sum)
+while True:
+    count += 1
+    
+    sum = int(a[0]) + int(a[-1])
+    b = str(sum)
+    new = a[-1] + b[-1]
+    a = new
 
-b = str(sum)
-print("b:", b)
-
-new = a[-1] + b[-1]
-print("new:", new)
-
-c = new
-print("c:", c)
-# 내일 다시
-
+    if a == aa:
+        print(count)
+        break
