@@ -63,3 +63,29 @@ if res.count(maxNum) > 1:
     print("?")
 else:
     print(alpha[index].upper())
+
+# 1152
+a = list(input().split(' '))
+
+if a[0] == '':
+    del a[0]
+
+    if a[-1] == '':
+        del a[-1]
+    print(len(a))
+elif a[-1] == '':
+    del a[-1]
+    print(len(a))
+else:
+    print(len(a))
+
+# 2908
+a, b = input().split(' ')
+
+aa = a[2] + a[1] + a[0]
+bb = b[2] + b[1] + b[0]
+
+if int(aa) > int(bb):
+    print(aa)
+else:
+    print(bb)
