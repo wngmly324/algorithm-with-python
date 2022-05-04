@@ -89,3 +89,34 @@ if int(aa) > int(bb):
     print(aa)
 else:
     print(bb)
+
+# 5622
+a = input()
+sum = 0
+for i in a:
+    if i in ['A','B','C']:
+        time = 3
+        sum += time
+    elif i in ['D','E','F']:
+        time = 4
+        sum += time
+    elif i in ['G','H','I']:
+        time = 5
+        sum += time
+    elif i in ['J','K','L']:
+        time = 6
+        sum += time
+    elif i in ['M','N','O']:
+        time = 7
+        sum += time
+    elif i in ['P','Q','R', 'S']:
+        time = 8
+        sum += time
+    elif i in ['T','U','V']:
+        time = 9
+        sum += time
+    elif i in ['W','X','Y','Z']:
+        time = 10
+        sum += time
+        
+print(sum)
