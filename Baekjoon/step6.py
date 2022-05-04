@@ -109,7 +109,7 @@ for i in a:
     elif i in ['M','N','O']:
         time = 7
         sum += time
-    elif i in ['P','Q','R', 'S']:
+    elif i in ['P','Q','R','S']:
         time = 8
         sum += time
     elif i in ['T','U','V']:
@@ -120,3 +120,19 @@ for i in a:
         sum += time
         
 print(sum)
+
+# 2941
+a = input()
+
+x = ['c=','c-','dz=','d-','lj','nj','s=','z=']
+y = []
+for i in x:
+    xCnt = a.count(i)
+    y.append(xCnt)
+
+sum = 0
+for j in y:
+    sum += j
+
+aLen = len(a)
+print(aLen - sum)
