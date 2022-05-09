@@ -13,9 +13,13 @@ print(breakevenPoint)
 # 2292
 n = int(input())
 
-def honeycomb(num):
-    if num == 1:
-        print(1):
-    else:
-        a = 1
-        
+honey = 1
+count = 1
+
+if n == 1:
+    print(1)
+else:
+    while n > honey:
+        honey += (count * 6)
+        count += 1
+    print(count)
