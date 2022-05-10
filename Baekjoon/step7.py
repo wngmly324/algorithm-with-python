@@ -10,7 +10,7 @@ else:
     breakevenPoint = a // (c - b) + 1
 
 print(breakevenPoint)
-'''
+
 # 2292
 n = int(input())
 
@@ -25,3 +25,21 @@ else:
         honey += (count * 6)
         
     print(count+1)
+'''
+# 1193
+x = int(input())
+
+numerator = 0 # 분자
+denominator = 0 # 분모
+
+count = 1
+list = []
+
+if x == 1:
+    print("1/1")
+    
+else:
+    while x == count:
+        count += 1
+
+        
