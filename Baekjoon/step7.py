@@ -29,17 +29,29 @@ else:
 # 1193
 x = int(input())
 
-numerator = 0 # 분자
-denominator = 0 # 분모
+sum = 0
+row = 0
+col = 0
+cnt = 0
+for i in range(x):
+    sum += i
+    cnt += 1
 
-count = 1
-list = []
+    if sum >= x:
+        row = cnt - 1
+        column = x - (sum - i)
+        print("row:", cnt)
+        print("column:", column)
+        break
+
+num = 0
+den = 0
 
 if x == 1:
-    print("1/1")
-    
+    print("%s/%s" % (num+1, den+1))
 else:
-    while x == count:
-        count += 1
+    for j in range(cnt):
+        if row % 2 == 0:
+            pass
 
-        
+print("%s/%s" % (num, den))
