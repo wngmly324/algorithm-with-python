@@ -1,3 +1,4 @@
+'''
 # 1712
 import sys
 a, b, c = map(int, sys.stdin.readline().split())
@@ -44,3 +45,14 @@ else:
     den = line - gap
 
 print("%s/%s" % (num, den))
+'''
+# 2869
+v, a, b = map(int, input().split())
+
+dal = 0
+cnt = 0
+while dal > v:
+    cnt += 1
+    
+
+print(cnt)
