@@ -1,4 +1,3 @@
-'''
 # 1712
 import sys
 a, b, c = map(int, sys.stdin.readline().split())
@@ -25,33 +24,23 @@ else:
         honey += (count * 6)
         
     print(count+1)
-'''
+
 # 1193
 x = int(input())
 
-sum = 0
-row = 0
-col = 0
-cnt = 0
-for i in range(x):
-    sum += i
-    cnt += 1
+line = 0
+max = 0
+while x > max:
+    line += 1
+    max += line
 
-    if sum >= x:
-        row = cnt - 1
-        column = x - (sum - i)
-        print("row:", cnt)
-        print("column:", column)
-        break
+gap = max - x
 
-num = 0
-den = 0
-
-if x == 1:
-    print("%s/%s" % (num+1, den+1))
+if line % 2 == 0:
+    num = line - gap
+    den = gap + 1
 else:
-    for j in range(cnt):
-        if row % 2 == 0:
-            pass
+    num = gap + 1
+    den = line - gap
 
 print("%s/%s" % (num, den))
