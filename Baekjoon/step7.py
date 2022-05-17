@@ -1,4 +1,3 @@
-'''
 # 1712
 import sys
 a, b, c = map(int, sys.stdin.readline().split())
@@ -45,14 +44,17 @@ else:
     den = line - gap
 
 print("%s/%s" % (num, den))
-'''
+
 # 2869
-v, a, b = map(int, input().split())
+import math
 
-dal = 0
-cnt = 0
-while dal > v:
-    cnt += 1
-    
+a, b, v = map(int, input().split())
 
-print(cnt)
+n = ((v - a) / (a - b))
+
+if v == a:
+    print("1")
+elif (v - a) == 1:
+    print("2")
+else:
+    print(math.ceil(n)+1)
