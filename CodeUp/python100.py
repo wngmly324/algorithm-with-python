@@ -101,8 +101,43 @@ print(s[0:2], s[2:4], s[4:6])
 # 6023
 h, m, s = input().split(':')
 print(m)
-'''
+
 # 6024
 w1, w2 = input().split()
 s = w1 + w2
 print(s)
+
+# 6025
+a, b = input().split()
+c = int(a) + int(b)
+print(c)
+
+# 6026
+a = input()
+b = input()
+a = float(a)
+b = float(b)
+print(a+b)
+
+# 6027
+a = input()
+n = int(a)
+print('%x' % n)
+
+# 6028
+a = input()
+n = int(a)
+print('%X' % n)
+
+# 6029
+a = input()
+n = int(a, 16)
+print('%o'% n)
+
+# 6030
+n = ord(input())
+print(n)
+'''
+# 6031
+c = int(input())
+print(chr(c))
