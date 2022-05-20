@@ -122,22 +122,94 @@ print(a+b)
 # 6027
 a = input()
 n = int(a)
-print('%x' % n)
+print('%x' % n) # 16진수
 
 # 6028
 a = input()
 n = int(a)
-print('%X' % n)
+print('%X' % n) # 16진수
 
 # 6029
 a = input()
 n = int(a, 16)
-print('%o'% n)
+print('%o'% n) # 8진수
 
 # 6030
-n = ord(input())
+n = ord(input()) # ord(문자): 하나의 문자를 인자로 받고 유니코드 정수를 반환
 print(n)
-'''
+
 # 6031
 c = int(input())
-print(chr(c))
+print(chr(c)) # chr(정수): 하나의 정수를 인자로 받고 유니코드 문자를 반환
+
+# 6032
+a = int(input())
+print(-a)
+
+# 6033
+n = ord(input())
+print(chr(n+1))
+
+# 6034
+a, b = map(int, input().split())
+c = a - b
+print(c)
+
+# 6035
+f1, f2 = map(float, input().split())
+m = f1 * f2
+print(m)
+
+# 6036
+w, n = input().split()
+print(w * int(n))
+
+# 6037
+n = input()
+s = input()
+print(int(n) * s)
+
+# 6038
+a, b = map(int, input().split())
+c = a ** b
+print(c)
+
+# 6039
+f1, f2 = map(float, input().split())
+m = f1 ** f2
+print(m)
+
+# 6040
+a, b = map(int, input().split())
+c = a // b
+print(c)
+
+# 6041
+a, b = map(int, input().split())
+c = a % b
+print(c)
+
+# 6042
+f = float(input())
+print(round(f, 2))
+
+# 6043
+f1, f2 = map(float, input().split())
+m = round(f1 / f2, 3)
+print("%.3f" % m)
+
+# 6044
+a, b = map(int, input().split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)
+print(a%b)
+print("%.2f" % (a/b))
+
+# 6045
+a, b, c = map(int, input().split())
+sum = a + b + c
+avg = round(sum / 3, 2)
+print("%d %.2f" % (sum, avg))
+'''
