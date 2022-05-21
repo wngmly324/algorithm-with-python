@@ -212,4 +212,11 @@ a, b, c = map(int, input().split())
 sum = a + b + c
 avg = round(sum / 3, 2)
 print("%d %.2f" % (sum, avg))
+
+# 6046
+n = int(input())
+print(n<<1)
 '''
+# 6047
+a, b = map(int, input().split())
+print(a<<b)
