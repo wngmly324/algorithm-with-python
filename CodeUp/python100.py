@@ -216,7 +216,32 @@ print("%d %.2f" % (sum, avg))
 # 6046
 n = int(input())
 print(n<<1)
-'''
+
 # 6047
 a, b = map(int, input().split())
 print(a<<b)
+
+# 6048
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(a < b)
+
+# 6049
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(a == b)
+
+# 6050
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(b >= a)
+
+# 6051
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(a != b)
+'''
