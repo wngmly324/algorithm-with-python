@@ -269,8 +269,17 @@ if bool(a) != bool(b):
     print(True)
 else:
     print(False)
-'''
+
 # 6057
+a, b = input().split()
+a = int(a)
+b = int(b)
+if bool(a) == bool(b):
+    print(True)
+else:
+    print(False)
+
+# 6058
 a, b = input().split()
 a = int(a)
 b = int(b)
@@ -278,3 +287,4 @@ if bool(a) == False and bool(b) == False:
     print(True)
 else:
     print(False)
+'''
