@@ -287,4 +287,27 @@ if bool(a) == False and bool(b) == False:
     print(True)
 else:
     print(False)
+
+# 6059
+a = int(input())
+print(~a)
+
+# 6060
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(a & b)
+
+# 6061
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(a | b)
+
+# 6062
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(a ^ b)
 '''
+
