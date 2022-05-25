@@ -484,4 +484,31 @@ m = int(m)
 for i in range(1, n+1):
     for j in range(1, m+1):
         print("%d %d" %  (i, j))
+
+# 6081
+n = int(input(), 16)
+for i in range(1, 16):
+    print("%X*%X=%X" % (n, i, (n*i)))
+
+# 6082
+n = int(input())
+for i in range(1, n+1):
+    if i % 10 == 3:
+        print("X", end=" ")
+    elif i % 10 == 6:
+        print("X", end=" ")
+    elif i % 10 == 9:
+        print("X", end=" ")
+    else:
+        print(i, end=" ")
+
+# 6083
+r, g, b = map(int, input().split())
+cnt = 0
+for i in range(r):
+    for j in range(g):
+        for x in range(b):
+            cnt += 1
+            print("%d %d %d" % (i, j, x))
+print(cnt)
 '''
