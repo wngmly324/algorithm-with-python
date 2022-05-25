@@ -448,4 +448,40 @@ while n:
 n = int(input())
 for i in range(n+1):
     print(i)
+
+# 6077
+n = int(input())
+sum = 0
+while n:
+    if n % 2 == 0:
+        sum += n
+    n -= 1
+
+print(sum)
+
+# 6078
+s = 'a'
+while s != 'q':
+    s = input()
+    print(s)
+    
+    if s == 'q': break
+
+# 6079
+n = int(input())
+sum = 0
+cnt = 0
+while sum < n:
+    cnt += 1
+    sum += cnt
+
+print(cnt)
+
+# 6080
+n, m = input().split()
+n = int(n)
+m = int(m)
+for i in range(1, n+1):
+    for j in range(1, m+1):
+        print("%d %d" %  (i, j))
 '''
