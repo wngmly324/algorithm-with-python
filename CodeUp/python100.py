@@ -408,5 +408,44 @@ elif n // 3 == 3:
     print("fall")
 else:
     print("winter")
-'''
+    
+# 6071
+n = 1
+while n != 0:
+    n = int(input())
+    if n!= 0:
+        print(n)
 
+# 6072
+n = int(input())
+while True:
+    print(n)
+    n -= 1
+    if n == 0: break
+
+# 6073
+n = int(input())
+while True:
+    n -= 1
+    print(n)
+    if n == 0: break
+
+# 6074
+c = ord(input())
+for i in range(97, c+1):
+    print(chr(i), end=' ')
+
+# 6075
+n = int(input())
+cnt = 0
+n = n + 1
+while n:
+    print(cnt)
+    cnt += 1
+    n -= 1
+    
+# 6076
+n = int(input())
+for i in range(n+1):
+    print(i)
+'''
