@@ -511,4 +511,62 @@ for i in range(r):
             cnt += 1
             print("%d %d %d" % (i, j, x))
 print(cnt)
+
+# 6084
+h, b, c, s = input().split()
+h = int(h)
+b = int(b)
+c = int(c)
+s = int(s)
+result = round(h * b * c * s / 8 / 1024 / 1024, 1) # 8bit = 1byte, 1024 byte = 1KB, 1024KB = 1MB
+
+print(str(result)+" MB")
+
+# 6085
+w, h, b = map(int, input().split())
+result = w * h * b / 8 / 1024 / 1024
+print("%.2f MB" % result)
+
+# 6086
+n = int(input())
+
+i = 0
+sum = 0
+while sum < n:
+    i += 1
+    sum += i
+    
+print(sum)
+
+# 6087
+n = int(input())
+
+for i in range(1, n+1):
+    if i % 3 == 0:
+        continue
+    print(i, end=" ")
+
+# 6088
+a, d, n = map(int, input().split())
+while n-1:
+    n -= 1
+    a += d
+
+print(a)
+
+# 6089
+a, r, n = map(int, input().split())
+while n-1:
+    n -= 1
+    a *= r
+
+print(a)
+
+# 6090
+a, m , d , n = map(int, input().split())
+while n-1:
+    n -= 1
+    a = a * m + d
+    
+print(a)
 '''
