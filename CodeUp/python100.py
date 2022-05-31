@@ -576,4 +576,49 @@ i = 1
 while not(i % a == 0 and i% b == 0 and i % c == 0):
     i += 1
 print(i)
+'
+# 6092
+n = int(input())
+a = list(map(int, input().split()))
+
+cntList = []
+for i in range(1, 24):
+    cnt = a.count(i)
+    cntList.append(cnt)
+    
+for i in cntList:
+    print(i, end=" ")
+
+# 6093
+n = int(input())
+a = list(map(int, input().split()))
+
+reA = list(reversed(a))
+
+for i in reA:
+    print(i, end=" ")
+
+# 6094
+n = int(input())
+a = list(map(int, input().split()))
+
+print(min(a))
+
+# 6095
+n = int(input())
+
+d = []
+for i in range(20):
+    d.append([])
+    for j in range(20):
+        d[i].append(0)
+
+for i in range(n):
+    x, y = map(int, input().split())
+    d[x][y] = 1
+
+for i in range(1,20):
+    for j in range(1,20):
+        print(d[i][j], end=' ')
+    print()
 '''
