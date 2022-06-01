@@ -621,4 +621,61 @@ for i in range(1,20):
     for j in range(1,20):
         print(d[i][j], end=' ')
     print()
+
+# 6096
+p = []
+
+for i in range(20):
+    p.append([])
+    for j in range(20):
+        p[i].append(0)
+
+for i in range(19):
+    a = input().split()
+    for j in range(19):
+        p[i+1][j+1] = int(a[j])
+
+n = int(input())
+for i in range(n):
+    x, y = map(int, input().split())
+    for j in range(1,20):
+        if p[j][y] == 0:
+            p[j][y] =1
+        else:
+            p[j][y] = 0
+
+        if p[x][j] == 0:
+            p[x][j] = 1
+        else:
+            p[x][j] = 0
+
+for i in range(1,20):
+    for j in range(1,20):
+        print(p[i][j], end=" ")
+    print()
+
+# 6097
+h, w = map(int, input().split())
+
+p = []
+for i in range(h+1):
+    p.append([])
+    for j in range(w+1):
+        p[i].append(0)
+
+n = int(input())
+
+for i in range(n):
+    l, d, x, y = map(int, input().split())
+    if d == 0:
+        for j in range(l):
+            p[x][y+j] = 1
+    else:
+        for j in range(l):
+            p[x+j][y] = 1
+
+for i in range(1, h+1):
+    for j in range(1, w+1):
+        print(p[i][j], end=" ")
+    print()
 '''
